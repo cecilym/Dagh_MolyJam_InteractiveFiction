@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Cecily Madanes -- Codes and Story -- @cecilyismyruca
+    Tiffany McCoy -- Audio --
+
+# THANKS
+
+    MADE!
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
