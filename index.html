@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/normalize.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Acme' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -20,48 +21,131 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
+        <div id="images">
+            <img src="img/moose.JPG" id="moose" class="hidden">
+        </div>
+
         <div id="intro">
-        	<p>intro1</p>
+        	<p>Jet door opens. [Voiceover in English and Creole: Welcome to Hammer Island]</p>
+            <p>You walk out and look at the tablet</p>
+            <p>There is a text from your friend (with photo)</p>
+            <p>Click on the tablet map to go to your first job site</p>
+            <p>There are dinosaurs casually in the background</p>
         	<button id="introChoice"></button>
+        </div>
+
+        <div id="1" class="hidden">
+            <p>Teffa is waiting on the Tarmac to greet you</p>
+            <p>"It's been so long! I'm so glad they sent you here"</p>
+            <p>[You ask her if she knows what the assignment is working towards]</p>
+            <p>[laughs] No. I never do anymore. Oh well.</p>
+            <p>I'm supposed to take you to your first location.</p>
+            <p>[She hands you a tablet]</p>
+            <p>Use the map to get back when you're done.</p>
+            <button id="choice1"></button>
         </div>
 
         <div id="2" class="hidden">
         	<p>intro2</p>
+            <p>You are in the jungle in front of a large metal box that has unevenly sunken into the earth</p>
+            <p>There is a bolt on the box</p>
+            <p>[Use wrench to loosen bolt, this triggers a sound effect]</p>
+            <p>Something is breathing deeply into your left ear</p>
         	<button id="choice2"></button>
         </div>
 
         <div id="3" class="hidden">
         	<p>intro3</p>
+            <p>You turn around and there is a dinosaur, gray with a long neck, about seven feet tall. It's eyes are black and large.</p>
+            <p>[hover over the dinosaur and you can pet it, triggers noise, flashes color]</p>
+            <p>He likes you</p>
+            <p>[Attachment +1 for every pet, color shifts with every pet]</p>
         	<button id="choice3"></button>
         </div>
 
         <div id="4" class="hidden">
         	<p>intro4</p>
+            <p>The dinosaur lays by your feet</p>
+            <p>Well, might as well get back to work</p>
+            <p>Your instructions say to stop, go to the village and wait for instructions</p>
         	<button id="choice4"></button>
+        </div>
+
+        <div id="5" class="hidden">
+            <p>5</p>
+            <p>The Dinosaur is following you closely</p>
+            <p>He brings you a small box. It wasn't yours... Someone must have dropped it.</p>
+            <p>It's a distortion box. [___ added to inventory]</p>
+            <p>[Attachment +1 for every pet, color shifts with every pet]</p>
+            <p>He puts hist head against your hand.</p>
+            <p>"I'm going to call you Dahgi!"</p>
+            <button id="choice5"></button>
+        </div>
+
+        <div id="town6" class="hidden">
+            <p>6 Town</p>
+            <p>There is a bar. A woman is sitting outside by the door. She looks upset. [Talking to woman lowers anger]</p>
+            <p>Teffa is there. Her eyes widen when she sees the dinosaur followed you.</p>
+            <p>"I named him Dahgi!" you say.</p>
+            <p>"You.. You're not supposed to treat them like that here..."</p>
+            <p>"Like what?"</p>
+            <p>"Like... pets." [Dahgi purrs] Teffa looks embarrassed. "They're food here. It's just a taboo."</p>
+            <button id="choice6"></button>
+        </div>
+
+        <div id="bar7" class="hidden">
+            <p>7 Bar</p>
+            <p>It's dark and smells like old beer</p>
+            <p>There is a large vending machine</p>
+            <p>[Buying food for someone lowers hunger]</p>
+            <button id="choice7"></button>
+        </div>
+
+        <div id="vending8" class="hidden">
+            <p>8 Vending Machine</p>
+            <button id="choice8"></button>
+        </div>
+
+        <div id="atBar9" class="hidden">
+            <p>At the bar</p>
+            <button id="choice9"></button>
         </div>
 
         <div id="endYouKilled" class="hidden">
         	<p>endYouKilled</p>
+            <p>This happens when the village anger variable gets too high</p>
+            <p>This is prevented by talking to ___ about ___, letting her mess up ___</p>
         	<button id="endYouKilledChoice"></button>
         </div>
 
         <div id="endDahgKilled" class="hidden">
         	<p>endDahgKilled</p>
+            <p>The happens when the village hunger variable gets too high</p>
+            <p>This ending is prevented buy buying the villagers a ___ to eat</p>
         	<button id="endDahgKilledChoice"></button>
         </div>
 
         <div id="endTruth" class="hidden">
         	<p>endTruth</p>
+            <p>This happens when you find out that the dinosaur control system is what you were sent to desemble</p>
         	<button id="endDahgKilledChoice"></button>
         </div>
 
         <footer id="inventory">
         	inventory
         	<a href="">work prompt</a>
+            <a href="">soldering iron</a>
+            <a href="">tablet(compass,map)</a>
+            <a href="">credit card</a>
+            <a href="">amp</a>
+            <select>
+              <option value="solderingIron">soldering iron</option>
+              <option value="tablet">tablet</option>
+              <option value="creditCard">creditCard</option>
+            </select>
         </footer>
 
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
-
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>

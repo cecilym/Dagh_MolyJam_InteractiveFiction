@@ -59,10 +59,52 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    margin: 20px;
+    background-color: #A0BF80;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+}
+
+div {
+    background-color: #CED3F2;
+    padding: 6px 16px 10px 16px;
+}
+
+#images {
+    background-color: #A0BF80;
+    height: 100px;
+}
+
+#moose {
+    height: 100px;
+}
+
+button {
+    background-color: #BF4141;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+}
+
 .hidden {
   display: none;
 }
 
+footer {
+    margin: 6px; 
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:50px;
+    width:100%;
+    background:#D982CA;
+    outline-style: solid;
+    outline-width: 6px;
+    outline-color: #8C1F66;
+    font-family: 'Acme', sans-serif;
+    font-size: 18px;
+}
 
 
 
