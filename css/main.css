@@ -67,7 +67,8 @@ body {
 }
 
 input {
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 #t {
@@ -86,24 +87,36 @@ div:not(#images){
 }
 
 #images {
+    padding-bottom: 100px;
     float: right;
-    height: 100%;
+    height: auto;
     background
 }
 
 #dino {
-    margin-top: 40px;
     width: 600px;
+    padding-bottom: 300px;
 }
 
 #tHello {
+    width: 500px;
     margin-top: 40px;
     width: 400px;
 }
 
 #womStand {
-    width: 280px;
+    width: 500px;
 }
+
+#checha1 {
+    width: 500px;
+}
+
+#jungle1 {
+    width: 400px;
+    z-index: -1;
+}
+
 
 button {
     background-color: #BF4141;
@@ -117,8 +130,8 @@ button {
 }
 
 footer {
-    margin: 6px; 
-    padding: 2px 0 0 5px;
+    margin: 8px; 
+    padding: 8px 0 0 10px;
     position:fixed;
     left:0px;
     bottom:0px;
@@ -126,13 +139,19 @@ footer {
     width:100%;
     background:#D982CA;
     outline-style: solid;
-    outline-width: 6px;
+    outline-width: 8px;
     outline-color: #8C1F66;
     font-family: 'Acme', sans-serif;
     font-size: 20px;
 }
 
-#playAgain {
+#invTit {
+    padding-left: 14px;
+    padding-top: 8px;
+    margin-top: 12px;
+}
+
+.playAgain {
     font-family: 'Acme', sans-serif;
     border-radius: 0px;
     width: auto;

@@ -45,6 +45,7 @@ $(document).ready(function() {
 
 	$("#introChoice").on('click', function() {
 		$("#tHello").removeClass('hidden');
+		$("#checha1").hide();
 		$("#1").removeClass('hidden').slideDown();
 		$("#introChoice").addClass('hidden');
 		$("#intro").addClass('hidden').slideDown();
@@ -53,6 +54,7 @@ $(document).ready(function() {
 
 	$("#choice1").on('click', function() {
 		$("#tHello").hide();
+		$("#jungle1").removeClass('hidden');
 		$("#2").removeClass('hidden').slideDown();
 		$("#choice1").addClass('hidden');
 		$("#1").addClass('hidden');
@@ -64,14 +66,14 @@ $(document).ready(function() {
 			var checked2 = $("input:checked").val();
 			console.log(checked2);
 			if (checked2 == "wrenchA" && !solved2a) {
-				$('#melted').append("<p>It wont budge because it's melted on.</p>");
+				$('#melted').append("<p><br>It wont budge because it's melted on.</p>");
 			}
 			else if (checked2 == "soldA") {
-				$('#melted').append('<p id="hot">The joint is hot and loose.</p>');
+				$('#melted').append('<p id="hot"><br>The joint is hot and loose.</p>');
 					solved2a = true;
 				}
 			else if ((checked2 == "wrenchA") && solved2a) {
-				$('#hot').append('<p>You got the bolt off. Something is breathing in your ear.</p>');	
+				$('#hot').append('<br><p>You got the bolt off.<br><br>Something is breathing in your ear.</p>');	
 				$("#choice2").removeClass('hidden');
 			} 
 		});
@@ -80,6 +82,7 @@ $(document).ready(function() {
 
 	$("#choice2").on('click', function() {
 		$("#3").removeClass('hidden').slideDown();
+		$("#jungle1").hide();
 		$("#dino").removeClass('hidden');
 		$("#choice2").addClass('hidden');
 		$("#2").addClass('hidden');
@@ -109,7 +112,7 @@ $(document).ready(function() {
 		$("#bar7").removeClass('hidden').slideDown();
 		$("#town6").addClass('hidden');
 		$("#6").addClass('hidden');
-		$("womStand").addClass('hidden');
+		$("#womStand").hide();
 	});
 
 	$("#choice7").on('click', function() {
@@ -150,6 +153,7 @@ $(document).ready(function() {
 			if(!done11) {
 				$("#wires11").addClass('hidden');
 				$("#death11").removeClass('hidden');
+				$("#dino").hide();
 			}
     }, 6000);
 
@@ -159,8 +163,8 @@ $(document).ready(function() {
 			console.log(checked11);
 			if (checked11 == "soldA") {
 				$('#finSod').append("<p>You quickly bring the wire tips together. It's gonna be a cold joint. You have to get out.</p>");	
-				$("#choice11").removeClass('hidden');
 				done11 = true;
+				$('#choice11').removeClass('hidden');
 			} 
 		});
 	});
@@ -170,6 +174,15 @@ $(document).ready(function() {
 		$("#wires11").addClass('hidden');
 		$("#exit12").removeClass('hidden').slideDown();
 		exp11.play();
+	});
+
+	$(".playAgain").on('click', function() {
+		$("#exit12").addClass('hidden');
+		$("#dino").hide();
+		$(".playAgain").addClass('hidden');
+		$("#intro").removeClass('hidden').slideDown();
+		$("#checha1").show();
+		location.reload();
 	});
 
 });

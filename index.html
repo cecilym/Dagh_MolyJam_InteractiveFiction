@@ -26,14 +26,18 @@
         <img src="img/dino.png" id="dino" class="hidden">
         <img id="tHello" src="img/teffaHello.png" alt="Teffa" class="hidden">
         <img id="womStand" src="img/womStand.png" alt="Woman standing by the bar" class="hidden">
+        <img id="checha1" src="img/checha.png" alt="Checha arrives">
+        <img id="jungle1" src="img/jungle.png" alt="Jungle" class="hidden">
     </div>
 
     <button id="jump" class="hidden"></button>
 
     <div id="intro">
-      <p>Jet door opens. A female voice comes over the loudspeaker and says "Welcome to Hammer Island" in English and Brazilio Creole.</p>
+      <h2>Dahg</h2>
+      <h3>By Cecily Madanes, Tiffany McCoy, <br>and Timmy Renato</h3>
+      <p>The jet door opens. A female voice comes over the loudspeaker and says "Welcome to Hammer Island" in English and Brazilio Creole.</p>
       <p>The airlock releases. Within seconds you feel the tropical humidity.</p>
-      <p>Still groggy from the ride, you groggily start down the tarmac and see Teffa waiting for you.</p>
+      <p>Still groggy from the flight, you start down the tarmac and see Teffa waiting for you.</p>
       <button id="introChoice"></button>
     </div>
 
@@ -41,7 +45,6 @@
       <p id="t">So good to see you! How long has it been since we were sent to the same site? We'll have to catch up later. I'm supposed to take you to your first location ASAP. You know how it is.</p>
       She hands you a tablet
       <p id="t">Your technical brief pretty straightforward. Use the tablet map to get back when you're done. </p> 
-      
       <p>You ask if she knows what you're dismantling.</p> 
       <p id="t">Ha! I never do anymore.</p> 
       <p>Her laugh can't hide the pragmatic surrender common to Monseed engineers.</p>
@@ -50,7 +53,7 @@
 
     <div id="2" class="hidden">
       <p>Teffa leaves you at your first location. It's only a mile from town, but already thick jungle. </p> 
-      <p id="melted">The metal box you'll be working on comes to your waist on one side because it's lopsidedly sunken into the ground. There's a greasy bolt on its access door. It seems to be melted on.</p>
+      <p id="melted">The metal box you'll be working on comes to your waist on one side because it's lopsidedly sunken into the ground. There's a greasy bolt on its access door. It seems to be melted on.</p><br>
       <button id="choice2" class="hidden"></button> 
     </div>
 
@@ -71,8 +74,8 @@
 
     <div id="5" class="hidden">
       <p>You start walking towards town and the Dahgi follows you closely.</p> 
-      <p>He dips his neck to the earth beside you and retrieves a small box. It wasn't yours... Someone must have dropped it. It's a distortion box. [added to inventory]</p>
-      <p>He puts hist head against your hand. He wants to be pet.</p> 
+      <p>He dips his neck to the earth beside you and retrieves a small box. It wasn't yours... Someone must have dropped it. It's a distortion box.</p>
+      <p>He puts his head against your hand. He wants to be pet.</p> 
       <p>A sweet giant with an eye for circuit boards? This one's a keeper.</p>
       <button id="choice5"></button>
     </div>
@@ -89,10 +92,9 @@
     </div>
 
     <div id="bar7" class="hidden">
-      <p>You step inside the bar and ask if she knew what the woman said.</p> 
+      <p>You step inside the bar and ask if she knows what the woman said.</p> 
       <p id="t">"Fuck you. You touch our animals. Keep the bar." Don't take it too personally. People are upset that Monseed installed a company vending machine that only works with our company credit cards.</p> 
       <p>Teffa motions towards a large shiny machine glowing white in the back left corner of the dark bar.</p>
-      <p>It smells like old beer.</p> 
       <p>"Are they allowed to use the vending machine?"</p> 
       <p id="t">Well, I guess so. But it only takes our cards, so they don't.</p>
       <button id="choice7"></button>
@@ -112,7 +114,7 @@
       <p>She smiles nervously. Again you are annoyed, and it shows. Teffa slumps forward.</p>
       <p id="t">Sorry, I know I'm tense. You would be too. I don't know what's going on anymore. I mean, I never knew, but now is different.</p> 
       <p>You feel guilty. She has only been nice to you.</p> 
-      <p id="t">I don't know what it is but things are uneasy lately. The vending machine was a bad move. I don't know why they would do that. In private, maybe. But right after the recessive crop deaths? And meat is rashioned here. It's just...</p> 
+      <p id="t">I don't know what it is but things are uneasy lately. The vending machine was a bad move. I don't know why they would do that. In private, maybe. But right after the recessive crop deaths? And meat is rationed here. It's just...</p> 
       <p>The tablet buzzes, a notification of your next location. You look at Teffa, apollogetically this time.</p>
       <p id="t">I'll probably get buzzed again soon. Let's have some fun tonight. I'll message you when I get off.</p>
       <button id="choice9"></button>
@@ -134,24 +136,17 @@
       <p>The tablet buzzes. Your location has been changed.</p> 
       <p id="finSod">The tablet buzzes four times in rapid succession. Time sensitive exit. But the solder isn't done...</p> 
 
-      <div id="stripWires" class="hidden">
-        <p>You rush to tin the wire tips tips and fuse them together. It's gonna be a cold joint. You have to get out.
-        </p>
-        <p>You hop out the box. Something tells you to run. Dahgi follows.</p> 
-        <button id="choice11" class="hidden"></button>
-      </div>
-
+      <button id='choice11' class="hidden"></button>
     </div>
 
     <div id="death11" class="hidden">
         <p>You didn't exit the site on time. It explodes. Dahgi and you are killed. 
         </p>
-      <button id="playAgain" url="">Play Again</button>
+      <button class="playAgain">Play Again</button>
     </div>
 
     <div id="exit12" class="hidden">
-      <p>The site explodes behind you. That explains the time sensitive exit notification.</p>
-      <button id="exit12"></button> 
+      <p>The site explodes behind you. That explains the time sensitive exit notification. You and Dahgi live.</p>
     </div>
 
     <div id="endYouKilled" class="hidden">
@@ -171,21 +166,21 @@
     <div id="endTruth" class="hidden">
       <p>endTruth</p>
       <p>This happens when you find out that the dinosaur control system is what you were sent to disassemble</p>
-      <button id="endDahgKilledChoice"></button>
+      <button id="endTruth"></button>
     </div>
 
     <footer id="inventory">
-      Inventory: check to use <br>
+      <span id="invTit">Inventory:  check to use </span><br>
       <input type="radio" name="inv" value="wrenchA"id="wrenchA">Wrench     </input>
       <input type="radio" name="inv" value="soldA"id="soldA">Soldering Iron     </input>
       <input type="radio" name="inv" value="tabletA"id="tabletA">Tablet     </input>
       <input type="radio" name="inv" value="credA"id="wrenchA">Credit Card     </input>
-      <input type="radio" name="inv" value="dA"id="dA" class="hidden">Distortion Box</input>
+      
       <select id="invDrop" class="hidden">
         <option value="solderingIron">Soldering Iron</option>
         <option id="wrench" value="wrench">Wrench</option>
-        <option value="tablet">Tablet</option>
         <option value="creditCard">CreditCard</option>
+        <option value="tablet" checked="checked">Tablet</option>
       </select>
     </footer>
 
