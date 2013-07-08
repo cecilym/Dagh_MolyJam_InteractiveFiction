@@ -11,8 +11,8 @@ textarea {
 }
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: 1.5em;
+    line-height: 1.2;
 }
 
 ::-moz-selection {
@@ -60,24 +60,49 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-    margin: 20px;
+    margin: 30px;
+    line-height: 1.2;
     background-color: #A0BF80;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 18px;
 }
 
-div {
+input {
+    margin-left: 10px;
+}
+
+#t {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 1.1em;
+}
+
+p {
+    margin: 2px 0 8px 0;
+}
+
+
+div:not(#images){
     background-color: #CED3F2;
     padding: 6px 16px 10px 16px;
 }
 
 #images {
-    background-color: #A0BF80;
-    height: 100px;
+    float: right;
+    height: 100%;
+    background
 }
 
-#moose {
-    height: 100px;
+#dino {
+    margin-top: 40px;
+    width: 600px;
+}
+
+#tHello {
+    margin-top: 40px;
+    width: 400px;
+}
+
+#womStand {
+    width: 280px;
 }
 
 button {
@@ -93,20 +118,26 @@ button {
 
 footer {
     margin: 6px; 
+    padding: 2px 0 0 5px;
     position:fixed;
     left:0px;
     bottom:0px;
-    height:50px;
+    height:70px;
     width:100%;
     background:#D982CA;
     outline-style: solid;
     outline-width: 6px;
     outline-color: #8C1F66;
     font-family: 'Acme', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-
+#playAgain {
+    font-family: 'Acme', sans-serif;
+    border-radius: 0px;
+    width: auto;
+    height: auto;
+}
 
 
 
