@@ -3,8 +3,9 @@
 
 # TEAM
 
-    Cecily Madanes -- Codes and Story -- @cecilyismyruca
-    Tiffany McCoy -- Audio --
+    Cecily Madanes -- Programmer, Writer, Artist -- @cecilyismyruca
+    Tiffany McCoy -- Audio, Model
+    Timmy Renato Pizza -- Audio
 
 # THANKS
 
@@ -12,5 +13,6 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    HTML5, CSS3,
+    jQuery, Modernizr,
+    Howler, PhotoShop Touch
